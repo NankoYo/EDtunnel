@@ -3,9 +3,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
+let userID = 'e480d00d-b0ae-4044-84d0-ed469694ccbe';
 
-const พร็อกซีไอพีs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];
+const พร็อกซีไอพีs = ['115155.xyz', 'yx.cloudflare.182682.xyz', 'cdn.2020111.xyz'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -81,9 +81,9 @@ export default {
 						// For any other path, reverse proxy to 'ramdom website' and return the original response, caching it in the process
 						const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
 						const newHeaders = new Headers(request.headers);
-						newHeaders.set('cf-connecting-ip', '1.2.3.4');
-						newHeaders.set('x-forwarded-for', '1.2.3.4');
-						newHeaders.set('x-real-ip', '1.2.3.4');
+						newHeaders.set('cf-connecting-ip', '47.88.15.127');
+						newHeaders.set('x-forwarded-for', '47.88.15.127');
+						newHeaders.set('x-real-ip', '47.88.15.127');
 						newHeaders.set('referer', 'https://www.google.com/search?q=edtunnel');
 						// Use fetch to proxy the request to 15 different domains
 						const proxyUrl = 'https://' + randomHostname + url.pathname + url.search;
