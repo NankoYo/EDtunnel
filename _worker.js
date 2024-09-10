@@ -81,9 +81,9 @@ export default {
 						// For any other path, reverse proxy to 'ramdom website' and return the original response, caching it in the process
 						const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
 						const newHeaders = new Headers(request.headers);
-						newHeaders.set('cf-connecting-ip', '47.88.15.127');
-						newHeaders.set('x-forwarded-for', '47.88.15.127');
-						newHeaders.set('x-real-ip', '47.88.15.127');
+						newHeaders.set('cf-connecting-ip', '8.222.128.32');
+						newHeaders.set('x-forwarded-for', '8.222.128.32');
+						newHeaders.set('x-real-ip', '8.222.128.32');
 						newHeaders.set('referer', 'https://www.google.com/search?q=edtunnel');
 						// Use fetch to proxy the request to 15 different domains
 						const proxyUrl = 'https://' + randomHostname + url.pathname + url.search;
