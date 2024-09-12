@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'e480d00d-b0ae-4044-84d0-ed469694ccbe';
 
-const พร็อกซีไอพีs = ['115155.xyz', 'yx.cloudflare.182682.xyz', 'cdn.2020111.xyz'];
+const พร็อกซีไอพีs = ['edtunnel-dgp.pages.dev', 'yx.cloudflare.182682.xyz', 'cf.qmsdh.com'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
