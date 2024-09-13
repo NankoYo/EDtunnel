@@ -5,12 +5,12 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '5f8628de-5fe1-43f2-8291-6fae4a9e68d4';
 
-const พร็อกซีไอพีs = ['cloudflare.cfgo.cc', 'yx.cloudflare.182682.xyz', 'icook.tw'];
+const พร็อกซีไอพีs = ['edjx.cloudflare.182682.xyz/', 'speed.marisalnc.com', 'cdn.2020111.xyz'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
 // use single พร็อกซีไอพี instead of random
-// let พร็อกซีไอพี = 'yx.cloudflare.182682.xyz';
+let พร็อกซีไอพี = 'cdn.2020111.xyz';
 // ipv6 พร็อกซีไอพี example remove comment to use
 // let พร็อกซีไอพี = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
 
